@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-
+                
                 echo 'Pull is done'
             }
         }
