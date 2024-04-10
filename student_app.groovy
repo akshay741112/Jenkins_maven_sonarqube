@@ -19,7 +19,7 @@ pipeline {
                 sh '''mvn sonar:sonar \
                     -Dsonar.projectKey=jenkins_project \
                     -Dsonar.host.url=http://13.201.84.247:9000 \
-                    -Dsonar.login=bdd331a584fc1dfb489eb88749922483b057d23d
+                    -Dsonar.login=bdd331a584fc1dfb489eb88749922483b057d23d'''
 }
                 echo 'Here we are testing '
             }
