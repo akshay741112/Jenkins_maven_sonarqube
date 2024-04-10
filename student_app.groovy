@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                withSonarQubeEnv(credentialsId: ' b468104d-2691-423d-88ff-65340178b851') {
+                withSonarQubeEnv(credentialsId: 'b468104d-2691-423d-88ff-65340178b851') {
     // some block
 }
                 echo 'Here we are testing '
