@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "/opt/"
+                sh "/opt/apache-maven-"
                 echo 'Hello World'
             }
         }
