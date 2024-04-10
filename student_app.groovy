@@ -9,7 +9,27 @@ pipeline {
             }
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+
            stage('Build') {
             steps {
                 sh '/opt/apache-maven-3.9.6/bin/mvn clean package'
