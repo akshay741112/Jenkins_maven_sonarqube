@@ -17,7 +17,19 @@ pipeline {
             }
         }
 
-    
+    stage('Pull') {
+            steps {
+                git changelog: false, poll: false, url: 'https://github.com/chetansomkuwar254/studentapp.ui.git'
+                echo 'Pull is done'
+            }
+        }
+
+    stage('Pull') {
+            steps {
+                git changelog: false, poll: false, url: 'https://github.com/chetansomkuwar254/studentapp.ui.git'
+                echo 'Pull is done'
+            }
+        }
 
 
 
