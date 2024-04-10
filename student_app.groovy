@@ -16,14 +16,14 @@ pipeline {
         }
     }
     stages {
-        stage('') {
+        stage('Test') {
             steps {
                 echo 'Hello World'
             }
         }
     }
     stages {
-        stage('Hello') {
+        stage('Deploy') {
             steps {
                 echo 'Hello World'
             }
