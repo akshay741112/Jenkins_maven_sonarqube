@@ -25,7 +25,6 @@ pipeline {
                 echo 'Test is succeded'
             }
         }
-    stages {
         stage('Deploy') {
             steps {
                 echo 'Hello World'
