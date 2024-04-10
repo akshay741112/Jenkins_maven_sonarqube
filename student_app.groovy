@@ -23,7 +23,6 @@ pipeline {
 }
                 echo 'Here we are testing '
             }
-        }
         stage('Quality Test') {
             steps {
                 echo 'Here we are testing the quality'
