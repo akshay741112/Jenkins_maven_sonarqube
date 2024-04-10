@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 {
+                
     // some block
 }
                 echo 'Here we are testing '
