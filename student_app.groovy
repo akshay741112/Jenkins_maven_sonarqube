@@ -29,7 +29,7 @@ pipeline {
 
     stage('Pull') {
             steps {
-                '
+                
             }
         }
 
@@ -67,7 +67,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Hello World'
+                
             }
         }
 }
