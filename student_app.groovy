@@ -25,10 +25,10 @@ pipeline {
                 echo 'Test is succeded'
             }
         }
+        
         stage('Deploy') {
             steps {
                 echo 'Hello World'
             }
         }
-    }
 }
