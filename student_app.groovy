@@ -32,26 +32,4 @@ pipeline {
                 echo 'Hello World'
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
 }
