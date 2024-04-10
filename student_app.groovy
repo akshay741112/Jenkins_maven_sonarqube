@@ -57,7 +57,7 @@ pipeline {
             }
         }
  
-        stage('Test') {
+        stage('') {
             steps {
                 sh '''/opt/apache-maven-3.9.6/bin/mvn sonar:sonar \\
                         -Dsonar.projectKey=studentapp-ui \\
