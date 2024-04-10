@@ -15,7 +15,7 @@ pipeline {
                 echo 'build is done'
             }
         }
-    stages {
+ 
         stage('Test') {
             steps {
                 sh '''/opt/apache-maven-3.9.6/bin/mvn sonar:sonar \\
@@ -25,7 +25,6 @@ pipeline {
                 echo 'Test is succeded'
             }
         }
-    }
     stages {
         stage('Deploy') {
             steps {
