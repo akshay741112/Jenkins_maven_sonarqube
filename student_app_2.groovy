@@ -17,7 +17,7 @@ pipeline {
         }  
     
     stages {
-        stage('pull') {
+        stage('test') {
             steps {
                 
                 echo 'Hello World'
