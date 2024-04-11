@@ -17,10 +17,6 @@ pipeline {
              steps {
              }
          }
-        // stage('Deploy') {
-        //     steps {
-        //         echo 'Deployed on docker'
-        //     }
-        // }
+       
     }
 }
