@@ -23,7 +23,13 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        
+     stages {
+        stage('') {
+            steps {
+                
+                echo 'Hello World'
+            }
+        }   
     }
     
 
