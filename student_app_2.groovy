@@ -2,35 +2,30 @@ pipeline {
     agent any
 
     stages {
-        stage('pull') {
+        stage('Pull') {
             steps {
                 git changelog: false, poll: false, url: 'https://github.com/chetansomkuwar254/studentapp.ui.git'
-
-                echo 'Hello World'
+                echo 'Pull is completed'
             }
         }
-     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                
-                echo 'Hello World'
-            }
-        }  
-    
-    stages {
-        stage('test') {
-            steps {
-                
-                echo 'Hello World'
+                sh '/opt/apache-maven-3.9.6/bin/mvn clean package'
+                echo 'Buils is completed with maven'
             }
         }
-     stages {
-        stage('deployment') {
-            steps {
-                
-                echo 'Hello World'
-            }
-        }   
+        stage('Test') {
+             steps {
+                 sh '''/opt/apache-maven-3.9.6/bin/mvn sonar:sonar \\
+                      -Dsonar.projectKey=studentapp \\
+                      -Dsonar.host.url=http://13.201.84.247:9000 \\
+                      -Dsonar.login=bdd331a584fc1dfb489eb88749922483b057d23d'''
+             }
+         }
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'Deployed on docker'
+        //     }
+        // }
     }
-}       
-
+}
