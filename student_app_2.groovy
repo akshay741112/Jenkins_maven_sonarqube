@@ -9,7 +9,7 @@ pipeline {
             }
         }
      stages {
-        stage('pull') {
+        stage('build') {
             steps {
                 
                 echo 'Hello World'
