@@ -15,11 +15,12 @@ pipeline {
                 echo 'Hello World'
             }
         }  
-    }stages {
+    }
+    stages {
         stage('pull') {
             steps {
                 
                 echo 'Hello World'
             }
         }
-}
+    }
