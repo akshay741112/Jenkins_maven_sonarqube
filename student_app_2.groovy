@@ -24,7 +24,7 @@ pipeline {
             }
         }
      stages {
-        stage('diploy') {
+        stage('deployment') {
             steps {
                 
                 echo 'Hello World'
